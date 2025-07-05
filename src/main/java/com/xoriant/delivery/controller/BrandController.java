@@ -27,4 +27,8 @@ public class BrandController {
 		String response = brandService.addNewBrand(brand);
 		return new ResponseEntity<String>(response, HttpStatus.CREATED);
 	}
+
+	public void test(){
+
+	}
 }
