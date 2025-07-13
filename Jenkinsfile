@@ -27,8 +27,8 @@ agent any
                 steps {
                       echo 'Deploying to dev server'
                      sh ''' 
-                     scp target/og.jar ec2-user@44.203.213.69:/app/lib
-                      ssh ec2-user@44.203.213.69 'nohup /app/start.sh &'
+                     scp target/og.jar ec2-user@3.234.154.193:/app/lib
+                      ssh ec2-user@3.234.154.193 'nohup /app/start.sh &'
                       '''
                       echo 'Deployed Succesfully'
                  }
