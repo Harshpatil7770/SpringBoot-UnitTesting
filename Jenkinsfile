@@ -23,8 +23,8 @@ pipeline {
             steps {
                 echo 'Deploying to dev server'
                 sh '''
-                scp target/og.jar ec2-user@98.82.20.70:/app/lib
-                ssh ec2-user@98.82.20.70 'nohup /app/start.sh &'
+                scp target/og.jar ec2-user@34.206.64.135:/app/lib
+                ssh ec2-user@34.206.64.135 'nohup /app/start.sh &'
                 '''
                 echo 'Deployed Successfully'
             }
